@@ -42,8 +42,7 @@ CREATE TABLE `registereduser` (
 --
 
 INSERT INTO `registereduser` (`regid`, `username`, `emailid1`, `password`, `gender`, `mobileno`, `imageprofile`, `creationdate`) VALUES
-(1, 'vignesh', 'vicky@gmail.com', '123', 'male', '9865236558', NULL, '2018-07-18 16:03:11'),
-(2, 'Suresh', 'suresh@gmail.com', '123', 'male', '9865323565', NULL, '2018-07-18 17:13:35');
+
 
 --
 -- Indexes for dumped tables
