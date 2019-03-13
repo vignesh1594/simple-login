@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="cjs/index.js"></script>
+</head>
+<body ng-app="Assignmentapp" ng-controller="Assignmentcontroller">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div  style="background-color:grey;color:white"><center><h1>User Master</h1></center></div>
+<div></div>
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<th>SRNO</th>
+<th>USERNAME</th>
+<th>EMAILID</th>
+<th>GENDER</th>
+<th>MOBILENO</th>
+<th>PHOTO</th>
+<!-- <th>Action</th> -->
+</thead>
+<tbody ng-init="listregistereduser()">
+<tr ng-repeat="x in listregistereduserdata">
+<td>{{$index+1}}</td>
+<td>{{x.username}}</td>
+<td>{{x.emailid1}}</td>
+<td>{{x.gender}}</td>
+<td>{{x.mobileno}}</td>
+<td><img ng-src="http://localhost:8326/uploads/{{x.imageprofile}}" style="height:90px;width:100px"></td>
+<!-- <td><button class="btn btn-warning" id="update" ng-click="getdetails(x.assid);">Edit</button></td> -->
+
+
+</tr>
+</tbody>
+
+</table>
+</div>
+</div>
+
+
+</div>
+</div>
+<script src="js/ng-file-upload.min.js"></script>
+		<script src="js/ng-file-upload-shim.min.js"></script>
+</body>
+</html>
